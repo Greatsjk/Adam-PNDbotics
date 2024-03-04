@@ -1,312 +1,274 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UniBind</title>
+    <meta name="author" content="Yuanhuiyi Lyu, Xu Zheng">
+    <meta name="description" content="Project page of UniBind">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="eccv_logo.png">
+    <!-- Format -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="../format/app.css">
+    <link rel="stylesheet" href="../format/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="../format/app.js"></script>
 
+  </head>
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-<body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
+  <body style=“text-align: center;”>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                UniBind: LLM-Augmented Unified and Balanced Representation Space to Bind Them All<br /> 
+                <small>
+                    Accepted to CVPR 2024
+                </small>
+            </h1>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
         
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+			<img src="./images/huiyi1.png" height="80px"><br>
+                        <a href="https://qc-ly.github.io/" >
+                           Yuanhuiyi Lyu*
+                        </a>
+                        
+                        <br /> AI Thrust, HKUST(GZ)
+                        <br /> &nbsp &nbsp
 
+                    </li>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+                    <li>
+			<img src="./images/xu1.png" height="80px"><br>
+			<a href="https://zhengxujosh.github.io/" >
+                        Xu Zheng*
+                      </a>
+                      <br /> AI Thrust, HKUST(GZ)
+                      <br /> &nbsp &nbsp
+                    </li>
+                <li>
+                    <img src="./images/jiazhou2.png" height="80px"><br>
+                    <a href="https://jiazhou-garland.github.io/" >
+                                Jiazhou Zhou
+                                </a>
+                                <br /> AI Thrust, HKUST(GZ)
+                                <br /> &nbsp &nbsp
+                            </li>
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+                            <li>
+			    <img src="./images/Addision.png" height="80px"><br>
+                        <a href="https://addisonwang2013.github.io/vlislab/linwang.html">
+                           Addison Lin Wang
+                        </a>
+                        <br /> AI & CMA Thrust, HKUST(GZ) 
+			    <br/> Dept. of CSE, HKUST 
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+
+
+
+        <!-- ##### Elements #####-->
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+			    <a href="">
+                            <img src="./images/arxiv.png" height="100px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+			    <!-- <a href="">
+                            <img src="./images/youtube_icon.jpg" height="100px"><br>
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li> -->
+                            <a href="">
+                            <img src="./images/github_icon.jpg" height="100px"><br>
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            
+                            <img src="./images/colab_icon.jpg" height="100px"><br>
+                                <h4><strong>Colab</strong></h4>
+                            </a>
+                        </li> -->
+ 
+
+<!--                         <li>
+                            <a href="https://github.com/jiazhou-garland/ELIP/blob/master/Appendix.pdf">
+                            <img src="./images/slide_icon.jpg" height="100px"><br>
+                                <h4><strong>Supp</strong></h4>
+                            </a>
+                        </li>                      -->
+                        <li>
+                            <a href="https://vlislab22.github.io/vlislab/">
+                            <img src="./images/lab_logo.png" height="100px"><br>
+                                <h4><strong>Vlislab</strong></h4>
+                            </a>
+                        </li>                       
+                      
+                    </ul>
+                </div>
+        </div>
+
+        <!-- ##### Abstract #####-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    We present UniBind, a flexible and efficient approach
+                    that learns a unified representation space for seven diverse
+                    modalities - image, text, audio, point cloud, thermal, video,
+                    and event data. Existing works, e.g., ImageBind, treat
+                    the image as the central modality and build an image-
+                    centered representation space; however, the space may be
+                    sub-optimal as it leads to an unbalanced representation
+                    space among all modalities. Moreover, the category names
+                    are directly used to extract text embeddings for the down-
+                    stream tasks, making it hardly possible to represent the se-
+                    mantics of multi-modal data. The "out-of-the-box" insight
+                    of our UniBind is to make the alignment centers modality-
+                    agnostic and further learn a unified and balanced repre-
+                    sentation space, empowered by the large language mod-
+                    els (LLMs). UniBind is superior in its flexible application
+                    to all CLIP-style models and delivers remarkable perfor-
+                    mance boosts. To make this possible, we 1) construct a
+                    knowledge base of text with the help of LLMs and multi-
+                    modal LLMs; 2) adaptively build LLM-augmented class-
+                    wise embedding centers on top of the knowledge base and
+                    encoded visual embeddings; 3) align all the embeddings
+                    to the LLM-augmented embedding centers via contrastive
+                    learning to achieve a unified and balanced representation
+                    space. UniBind shows strong zero-shot recognition perfor-
+                    mance gains over prior arts by an average of 6.36%. Fi-
+                    nally, we achieve new state-of-the-art performance, e.g., a
+                    6.75% gain on ImageNet, on the multi-modal fine-tuning
+                    setting while reducing 90% of the learnable parameters
+                </p>
+            </div>
+        </div>
+
+ 
+
+        <!-- ##### Results #####-->
+
+     <div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Overall framework of our UniBind
+            </h3>
+		<p class="text-justify">
+			An overview of our UniBind. Firstly, we construct the <strong>knowledge base</strong>, then learn a unified representation space via <strong>LLM-augmented contrastive learning</strong>, powered by the knowledge base. Lastly, We utilize the <strong>embedding center</strong> localized by the knowledge base to obtain the predictions.
+		</p>
+            <img src="./images/UniBind.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
     </div>
-  </div>
-</footer>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                The results of the emergent Zero-shot and Fine-tuning Recognition on <strong>six</strong> modalities.
+            </h3>
+            	<img src="./images/result.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                The t-SNE visualization of representation space.
+            </h3>
+		<img src="./images/result_space.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<div class="row">     
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                The t-SNE visualization of embedding centers.
+            </h3>
+		<img src="./images/result_tsne.png" class="img-responsive" alt="vis_res"  class="center" >
+      	</div>
+    </div>
+<!-- ####      <div class="col-md-8 col-md-offset-2">
+          <h3>
+              Comparison on octree representations
+          </h3>
+          <p class="text-justify">
+            DOT shows the more compact structure of DOT, 
+            resulting in fewer ray intersections, explaining our significant rendering speed boost.
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+          </p>
+		  <img src="./image/dot_cp.png" class="img-responsive" alt="vis_res" class="center"><br>
+    </div>   
+    <div class="col-md-8 col-md-offset-2">
+        <h3>
+            Comparison on visual quality and memory consumption
+        </h3>
+        <p class="text-justify">
+            DOT provides more details in complex regions, such as sharper reflections on windows and more evident edges on fences. 
 
-    <!-- End of Statcounter Code -->
+        </p>
+        <img src="./image/dot_cp2.png" class="img-responsive" alt="vis_res" class="center"><br>
+    </div>     
+    </div>
 
-  </body>
-  </html>
+
+		      
+    	<div class="row">      
+     <div class="col-md-8 col-md-offset-2">
+          <h3>
+              Demo 
+          </h3>   
+    </div>   
+      
+    <div class="col-md-8 col-md-offset-2">
+
+            <video width="800"  controls >
+                <source src="./video/dot.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>   
+    </div>          
+      </div>  ####-->
+   <!-- ##### BibTex #####-->
+        <hr>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+ 
+                <div class="row align-items-center">
+                    <div class="col py-3">
+                        <pre class="border">             
+@article{,
+  title={UniBind: LLM-Augmented Unified and Balanced Representation Space to Bind Them All},
+  author={Lyu,Yuanhuiyi and Zheng,Xu and Zhou,Jiazhou and Wang,Lin},
+  journal={arXiv},
+  year={2024}
+}
+</pre>
+                    </div>
+                </div>
+              
+    
+          </div>
+          
+        </div>
+    </div>
+</body>
+</html>
